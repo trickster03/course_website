@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< Updated upstream
 
 function App() {
   return (
@@ -18,6 +19,19 @@ function App() {
           Learn React
         </a>
       </header>
+=======
+import Navbar from './components/Navbar/Navbar'
+import Home from './pages/Home/Home';
+import About from './pages/About/About'
+import Footer from './components/Footer/Footer';
+function App() {
+  return (
+    <div>
+    <Navbar />
+    <Home />
+    <About />
+    <Footer />
+>>>>>>> Stashed changes
     </div>
   );
 }
