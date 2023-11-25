@@ -23,14 +23,23 @@ function App() {
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home';
 import About from './pages/About/About'
+<<<<<<< Updated upstream
 import Footer from './components/Footer/Footer';
+=======
+
+>>>>>>> Stashed changes
 function App() {
   return (
     <div>
     <Navbar />
     <Home />
     <About />
+<<<<<<< Updated upstream
     <Footer />
+>>>>>>> Stashed changes
+=======
+
+
 >>>>>>> Stashed changes
     </div>
   );
