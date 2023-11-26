@@ -1,5 +1,5 @@
 .background{
-    background-color: #4682A9;
+    background-color: rgb(46, 95, 128);
     height: 55px;
     width: 100%;
     display: flex;
@@ -18,4 +18,11 @@
     padding: 20px;
     text-decoration: none;
     font-size: large;
+}
+
+.links:hover{
+    
+    color:rgb(234, 234, 234);
+    text-decoration: underline;
+    
 }
