@@ -29,7 +29,7 @@ const accordionData = [
 const AccordianDataNotes = () => {
   return (
     <div className={accss.title}>
-   <h1>Notes</h1>
+   <h1 style={{textDecoration: 'none'}}>Notes</h1>
     <div className="accordion">
       {accordionData.map(({ title, content }) => (
         <Accordian title={title} content={content} />

@@ -5,6 +5,21 @@
 
 }
 
+.link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.heading 
+{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+text-decoration: none;
+}
+
+
 .cardDiv 
 {
    

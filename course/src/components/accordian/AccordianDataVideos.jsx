@@ -29,7 +29,7 @@ import accss from './AccordianData.module.css'
 const AccordianData = () => {
   return (
     <div className={accss.title}>
-   <h1>Lectures</h1>
+   <h1 style={{textDecoration: 'none'}}>Lectures</h1>
     <div className="accordion">
       {accordionData.map(({ title, content }) => (
         <Accordian title={title} content={content} />
