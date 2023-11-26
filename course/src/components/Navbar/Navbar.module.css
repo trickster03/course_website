@@ -1,0 +1,29 @@
+.background{
+    background-color: #266e9f;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    margin-top: -3px;
+}
+
+.links{
+    color: #FFFFFF; 
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.links:hover{
+    
+    color:rgb(234, 234, 234);
+    text-decoration: underline;
+    
+}

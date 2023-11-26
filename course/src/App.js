@@ -24,9 +24,13 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home';
 import About from './pages/About/About'
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import Footer from './components/Footer/Footer';
 =======
 
+>>>>>>> Stashed changes
+=======
+import Footer from './components/Footer/Footer';
 >>>>>>> Stashed changes
 function App() {
   return (
@@ -35,11 +39,15 @@ function App() {
     <Home />
     <About />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Footer />
 >>>>>>> Stashed changes
 =======
 
 
+>>>>>>> Stashed changes
+=======
+    <Footer/>
 >>>>>>> Stashed changes
     </div>
   );
