@@ -1,0 +1,5 @@
+tasks:
+0. API Structure
+1. Feature to upload videos , notes and assignments
+2. Only Admin based login system
+3. Disable other routes
