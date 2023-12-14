@@ -2,7 +2,10 @@
 {
     margin: 5rem;
     align-items: center;    
-
+    background-image: url('./image\ 5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 

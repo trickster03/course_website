@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap');
+
 .main 
 {
     width: 375px;
@@ -16,7 +18,7 @@
 {
     width: 350px;
     background-color: black;
-    height: 180px;
+    height: 210px;
     border-radius: 15px;
     margin-top: 20px;
 }
@@ -24,6 +26,11 @@
 .heading 
 {
     font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin: 0;
+    margin-top: 20px;
 }
 
 .headingDiv
