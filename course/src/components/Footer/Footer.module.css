@@ -68,12 +68,17 @@
  /* .heading {
     text-align: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-bottom: 2vh;
     margin-top: 5vh;
 =======
     margin-top: 10px;
     text-decoration: none;
 >>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
+=======
+   margin-bottom: 10px;
+   margin-top: 25px;
+>>>>>>> parent of b08ec36 (updated css code)
 }
 
 .background {
@@ -85,9 +90,12 @@
     bottom: 0;
 =======
     bottom: 0;  
+<<<<<<< HEAD
     border-radius: 0;
     padding-top: 30px;
 >>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
+=======
+>>>>>>> parent of b08ec36 (updated css code)
 }
 
 .footContainer {
@@ -159,15 +167,15 @@
     color: black;
     text-align: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 7vh;
     margin-top: 8vh;
 =======
     height: 30px;
+=======
+    height: 4rem;
+>>>>>>> parent of b08ec36 (updated css code)
     margin-top: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
    
 >>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
 }
