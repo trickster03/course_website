@@ -1,7 +1,7 @@
-.background{
+.background {
     background-color: rgb(46, 95, 128);
     height: 55px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -13,16 +13,16 @@
     margin-top: -3px;
 }
 
-.links{
-    color: #FFFFFF; 
+.links {
+    color: #FFFFFF;
     padding: 20px;
     text-decoration: none;
     font-size: large;
 }
 
-.links:hover{
-    
-    color:rgb(234, 234, 234);
+.links:hover {
+
+    color: rgb(234, 234, 234);
     text-decoration: underline;
-    
+
 }

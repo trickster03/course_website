@@ -12,73 +12,73 @@ import VideoAcc from './components/accordian/AccordianDataVideos'
 function App() {
   return (
     <div>
-    <Navbar />
-    <Routes>
-    <Route
-              path="/"
-              element={
-                <div>
-                  <Home />
-                </div>
-              }
-            />
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Home />
+            </div>
+          }
+        />
 
-<Route
-              path="/physics"
-              element={
-                <div>
-                  <Physics />
-                </div>
-              }
-            />
+        <Route
+          path="/physics"
+          element={
+            <div>
+              <Physics />
+            </div>
+          }
+        />
 
-<Route
-              path="/physics/notes"
-              element={
-                <div>
-                  <Accordian />
-                </div>
-              }
-            />
+        <Route
+          path="/physics/notes"
+          element={
+            <div>
+              <Accordian />
+            </div>
+          }
+        />
 
-<Route
-              path="/physics/video"
-              element={
-                <div>
-                  <VideoAcc />
-                </div>
-              }
-            />
+        <Route
+          path="/physics/video"
+          element={
+            <div>
+              <VideoAcc />
+            </div>
+          }
+        />
 
-<Route
-              path="/bio"
-              element={
-                <div>
-                  <Bio />
-                </div>
-              }
-            />
+        <Route
+          path="/bio"
+          element={
+            <div>
+              <Bio />
+            </div>
+          }
+        />
 
-<Route
-              path="/bio/notes"
-              element={
-                <div>
-                  <Accordian />
-                </div>
-              }
-            />
+        <Route
+          path="/bio/notes"
+          element={
+            <div>
+              <Accordian />
+            </div>
+          }
+        />
 
-<Route
-path="/bio/video"
-              element={
-                <div>
-                  <VideoAcc />
-                </div>
-              }
-            />
- 
-     </Routes>
-  <Footer />
+        <Route
+          path="/bio/video"
+          element={
+            <div>
+              <VideoAcc />
+            </div>
+          }
+        />
+
+      </Routes>
+      <Footer />
     </div>
   );
 }

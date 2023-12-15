@@ -1,36 +1,35 @@
-.main{
+.main {
     background-color: #4682A9;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     padding: 5%;
 }
 
-.textdiv{
+.textdiv {
     color: #FFFFFF;
     padding-left: 100px;
     width: 800px;
     display: flex;
     flex-direction: column;
-   justify-content: center;
-   margin-top: -10%;
-   font-size: 1.5rem;
-   text-decoration: none;
+    justify-content: center;
+    margin-top: -10%;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-.heading 
-{
+.heading {
     text-decoration: none;
     text-align: left;
 }
 
-.image{
+.image {
     width: 100%;
     height: 100%;
     border-radius: 15px;
 }
 
-.button{
+.button {
     margin-top: 10px;
     height: 50px;
     font-size: 20px;
@@ -41,12 +40,11 @@
     color: #FFFFFF;
 }
 
-.button:hover
-{
+.button:hover {
     background-color: #1b689b;
 }
 
-.imagediv{
+.imagediv {
     position: relative;
     width: 60%;
     display: flex;
@@ -56,7 +54,7 @@
     margin-top: 5%;
 }
 
-.absdiv{
+.absdiv {
     position: absolute;
     width: 300px;
     height: 300px;
@@ -64,40 +62,43 @@
     right: 22%;
 
 }
-.absimage{
+
+.absimage {
     height: 100%;
     width: 100%;
-    
+
 }
 
-.normaldiv{
+.normaldiv {
     width: 300px;
-    height: 300px;.main{
+    height: 300px;
+
+    .main {
         background-color: #4682A9;
         width: 100%;
         height: 90vh;
         display: flex;
         padding-top: 5%;
     }
-    
-    .textdiv{
+
+    .textdiv {
         color: #FFFFFF;
         padding-left: 100px;
         width: 800px;
         display: flex;
         flex-direction: column;
-       justify-content: center;
-       margin-top: -10%;
-       font-size: 1.5rem;
+        justify-content: center;
+        margin-top: -10%;
+        font-size: 1.5rem;
     }
-    
-    .image{
+
+    .image {
         width: 100%;
         height: 100%;
         border-radius: 15px;
     }
-    
-    .button{
+
+    .button {
         margin-top: 10px;
         height: 50px;
         font-size: 20px;
@@ -107,13 +108,12 @@
         background-color: #79A2CB;
         color: #FFFFFF;
     }
-    
-    .button:hover
-    {
+
+    .button:hover {
         background-color: #1b689b;
     }
-    
-    .imagediv{
+
+    .imagediv {
         position: relative;
         width: 60%;
         display: flex;
@@ -122,29 +122,111 @@
         margin-right: 10%;
         margin-top: 5%;
     }
-    
-    .absdiv{
+
+    .absdiv {
         position: absolute;
         width: 300px;
         height: 300px;
         top: 0;
         right: 22%;
-    
+
     }
-    .absimage{
+
+    .absimage {
         height: 100%;
         width: 100%;
-        
+
     }
-    
-    .normaldiv{
+
+    .normaldiv {
         width: 300px;
         height: 300px;
         margin-top: 250px;
         /* border: 10px solid; */
         border-radius: 15px;
     }
+
     margin-top: 250px;
     /* border: 10px solid; */
     border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 10%;
+        height: auto;
+    }
+
+    .textdiv {
+        padding: 0;
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .image {
+        border-radius: 10px;
+    }
+
+    .imagediv {
+        width: 100%;
+        justify-content: center;
+        margin: 5% 0;
+    }
+
+    .absdiv {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 5% 0;
+    }
+
+    .normaldiv {
+        width: 100%;
+        height: auto;
+        margin: 5% 0;
+    }
+}
+
+/* For screens up to 480px */
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 10%;
+        height: auto;
+    }
+
+    .textdiv {
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .image {
+        border-radius: 5px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .imagediv {
+        width: 100%;
+        justify-content: center;
+        margin: 10% 0;
+    }
+
+    .absdiv {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 10% 0;
+        /* Adjust margins as needed */
+    }
+
+    .normaldiv {
+        width: 100%;
+        height: auto;
+        margin: 10% 0;
+    }
 }

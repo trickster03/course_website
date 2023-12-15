@@ -1,4 +1,4 @@
-.phy
+/* .phy
 {
     margin: 5rem;
     align-items: center;    
@@ -30,4 +30,64 @@ text-decoration: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+} */
+.phy {
+    margin: 5vh;
+    align-items: center;
+
+    /* Add min-width and max-width for responsiveness */
+    min-width: 300px;
+    max-width: 80vw;
+
+    @media screen and (max-width: 768px) {
+        margin: 3vh;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin: 2vh;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+
+    /* Adjust font-size based on viewport width */
+    font-size: calc(20px + 1.5vw);
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.6rem;
+    }
+}
+
+.cardDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /* Add padding for better spacing on smaller screens */
+    padding: 2vh 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 1vh 0;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 0.5vh 0;
+        grid-template-columns: 1fr;
+    }
 }
