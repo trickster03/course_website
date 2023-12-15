@@ -1,7 +1,12 @@
 .background {
     background-color: rgb(46, 95, 128);
+<<<<<<< HEAD
     height: 55px;
     width: 100vw;
+=======
+    height: 70px;
+    width: 100%;
+>>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -11,18 +16,63 @@
     top: 0;
     left: 0;
     margin-top: -3px;
+    border: 0px;
+    border-radius: 0;
 }
+<<<<<<< HEAD
 
 .links {
     color: #FFFFFF;
+=======
+/* 
+.links{
+    color: #FFFFFF; 
+>>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
     padding: 20px;
     text-decoration: none;
     font-size: large;
+    font-weight: bolder;
+    transition: background-color 0.3s ease;
 }
 
+<<<<<<< HEAD
 .links:hover {
 
     color: rgb(234, 234, 234);
     text-decoration: underline;
 
 }
+=======
+.links:hover{
+    background-color: #79A2CB;
+} */
+
+.links {
+    color: #FFFFFF;
+    padding: 20px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+  }
+  
+  .links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #79A2CB;
+    transition: width 0.5s ease;
+    z-index: -1;
+  
+  }
+  
+  .links:hover::before {
+    width: 100%;
+  }
+  
+>>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb

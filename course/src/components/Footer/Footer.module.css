@@ -67,8 +67,13 @@
 
  /* .heading {
     text-align: center;
+<<<<<<< HEAD
     margin-bottom: 2vh;
     margin-top: 5vh;
+=======
+    margin-top: 10px;
+    text-decoration: none;
+>>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
 }
 
 .background {
@@ -76,7 +81,13 @@
     height: 30vh;
     width: 100vw;
     color: #FFFFFF;
+<<<<<<< HEAD
     bottom: 0;
+=======
+    bottom: 0;  
+    border-radius: 0;
+    padding-top: 30px;
+>>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
 }
 
 .footContainer {
@@ -147,8 +158,18 @@
     background-color: #FFFFFF;
     color: black;
     text-align: center;
+<<<<<<< HEAD
     height: 7vh;
     margin-top: 8vh;
+=======
+    height: 30px;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+>>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
 }
 
 .cpytext {
