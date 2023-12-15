@@ -20,29 +20,43 @@
     padding: 20px;
     text-decoration: none;
     font-size: large;
+    font-weight: bolder;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
 }
 
 .links:hover {
     background-color: #79A2CB;
 }
 
-*/ .links {
-    color: #FFFFFF;
-    >>>>>>>b08ec36fd0a4ccae59e7d16f8d250334091933cb padding: 20px;
-    text-decoration: none;
-    font-size: large;
-}
-
-<<<<<<< HEAD .links:hover {
+.links:hover {
 
     color: rgb(234, 234, 234);
     text-decoration: underline;
 
 }
 
-=======.links:hover {
+.links:hover {
 
     color: rgb(234, 234, 234);
     text-decoration: underline;
 
+}
+
+.links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #79A2CB;
+    transition: width 0.5s ease;
+    z-index: -1;
+
+}
+
+.links:hover::before {
+    width: 100%;
 }

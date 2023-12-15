@@ -1,42 +1,80 @@
 .main {
     background-color: #4682A9;
-<<<<<<< HEAD
-    width: 100vw;
-=======
     width: 100%;
->>>>>>> parent of b08ec36 (updated css code)
-    height: 100vh;
+    height: 110vh;
     display: flex;
-    padding: 5%;
+    justify-content: space-between;
+    border-radius: 0;
+
 }
 
 .textdiv {
     color: #FFFFFF;
-<<<<<<< HEAD
     margin-left: 10%;
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -10%;
+    margin-top: 3%;
     font-size: 1.5rem;
     text-decoration: none;
-=======
-    padding-left: 100px;
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-   justify-content: center;
-   margin-top: -10%;
-   font-size: 1.5rem;
-   text-decoration: none;
->>>>>>> parent of b08ec36 (updated css code)
+
 }
 
 .heading {
     text-decoration: none;
     text-align: left;
 }
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.button {
+    margin-top: 10px;
+    width: 250px;
+    height: 55px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #79A2CB;
+    color: #FFFFFF;
+    transition: background-color 1s ease;
+}
+
+.button:hover {
+    background-color: #1b689b;
+}
+
+.imagediv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5%;
+}
+
+.absimage {
+    height: 100%;
+    width: 100%;
+
+}
+
+/* .textdiv{
+        color: #FFFFFF;
+        padding-left: 100px;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       margin-top: -10%;
+       font-size: 1.5rem;
+    } */
 
 .image {
     width: 100%;
@@ -59,28 +97,13 @@
     background-color: #1b689b;
 }
 
-.imagediv {
-    position: relative;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 10%;
-    margin-top: 5%;
-}
-
-<<<<<<< HEAD
 .absdiv {
-=======
-.absdiv{
->>>>>>> parent of b08ec36 (updated css code)
     position: absolute;
-    width: 300px;
-    height: 300px;
-    top: 0;
-    right: 22%;
+    width: 350px;
+    height: 350px;
+    top: 60px;
+    right: 250px;
 
-<<<<<<< HEAD
 }
 
 .absimage {
@@ -90,217 +113,9 @@
 }
 
 .normaldiv {
-    width: 300px;
-    height: 300px;
-
-    .main {
-=======
-}
-.absimage{
-    height: 100%;
-    width: 100%;
-    
-}
-
-.normaldiv{
-    width: 300px;
-    height: 300px;.main{
->>>>>>> parent of b08ec36 (updated css code)
-        background-color: #4682A9;
-        width: 100%;
-        height: 90vh;
-        display: flex;
-        padding-top: 5%;
-    }
-<<<<<<< HEAD
-
-    .textdiv {
-=======
-    
-    .textdiv{
->>>>>>> parent of b08ec36 (updated css code)
-        color: #FFFFFF;
-        padding-left: 100px;
-        width: 800px;
-        display: flex;
-        flex-direction: column;
-<<<<<<< HEAD
-        justify-content: center;
-        margin-top: -10%;
-        font-size: 1.5rem;
-    }
-
-    .image {
-=======
-       justify-content: center;
-       margin-top: -10%;
-       font-size: 1.5rem;
-    }
-    
-    .image{
->>>>>>> parent of b08ec36 (updated css code)
-        width: 100%;
-        height: 100%;
-        border-radius: 15px;
-    }
-
-    .button {
-        margin-top: 10px;
-        height: 50px;
-        font-size: 20px;
-        padding: 10px;
-        border-radius: 10px;
-        border: none;
-        background-color: #79A2CB;
-        color: #FFFFFF;
-    }
-
-    .button:hover {
-        background-color: #1b689b;
-    }
-<<<<<<< HEAD
-
-    .imagediv {
-=======
-    
-    .imagediv{
->>>>>>> parent of b08ec36 (updated css code)
-        position: relative;
-        width: 60%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-right: 10%;
-        margin-top: 5%;
-<<<<<<< HEAD
-=======
-    }
-    
-    .absdiv{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        top: 0;
-        right: 22%;
-    
->>>>>>> parent of b08ec36 (updated css code)
-    }
-
-    .absdiv {
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        top: 0;
-        right: 22%;
-
-    }
-
-    .absimage {
-        height: 100%;
-        width: 100%;
-
-    }
-<<<<<<< HEAD
-
-    .normaldiv {
-=======
-    
-    .normaldiv{
->>>>>>> parent of b08ec36 (updated css code)
-        width: 300px;
-        height: 300px;
-        margin-top: 250px;
-        /* border: 10px solid; */
-        border-radius: 15px;
-    }
-<<<<<<< HEAD
-
+    width: 350px;
+    height: 350px;
     margin-top: 250px;
     /* border: 10px solid; */
     border-radius: 15px;
-}
-
-@media screen and (max-width: 768px) {
-    .main {
-        padding: 10%;
-        height: auto;
-    }
-
-    .textdiv {
-        padding: 0;
-        width: 100%;
-        margin-top: 0;
-        text-align: center;
-    }
-
-    .image {
-        border-radius: 10px;
-    }
-
-    .imagediv {
-        width: 100%;
-        justify-content: center;
-        margin: 5% 0;
-    }
-
-    .absdiv {
-        position: static;
-        width: 100%;
-        height: auto;
-        margin: 5% 0;
-    }
-
-    .normaldiv {
-        width: 100%;
-        height: auto;
-        margin: 5% 0;
-    }
-}
-
-/* For screens up to 480px */
-@media screen and (max-width: 480px) {
-    .main {
-        padding: 10%;
-        height: auto;
-    }
-
-    .textdiv {
-        width: 100%;
-        padding: 0;
-        margin-top: 0;
-        text-align: center;
-    }
-
-    .image {
-        border-radius: 5px;
-    }
-
-    .button {
-        font-size: 16px;
-    }
-
-    .imagediv {
-        width: 100%;
-        justify-content: center;
-        margin: 10% 0;
-    }
-
-    .absdiv {
-        position: static;
-        width: 100%;
-        height: auto;
-        margin: 10% 0;
-        /* Adjust margins as needed */
-    }
-
-    .normaldiv {
-        width: 100%;
-        height: auto;
-        margin: 10% 0;
-    }
-=======
-    margin-top: 250px;
-    /* border: 10px solid; */
-    border-radius: 15px;
->>>>>>> parent of b08ec36 (updated css code)
 }
