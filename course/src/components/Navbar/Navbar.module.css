@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .background{
     background-color: #266e9f;
     height: 75px;
@@ -13,6 +14,26 @@
     margin-top: -3px;
 }
 
+=======
+.background {
+  background-color: rgb(46, 95, 128);
+  height: 70px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  margin-top: -3px;
+  border: 0px;
+  border-radius: 0;
+}
+
+/* 
+>>>>>>> Stashed changes
 .links{
     color: #FFFFFF; 
     font-weight: bold;
@@ -22,8 +43,40 @@
 }
 
 .links:hover{
+<<<<<<< Updated upstream
     
     color:rgb(234, 234, 234);
     text-decoration: underline;
     
+=======
+    background-color: #79A2CB;
+} */
+
+.links {
+  color: #FFFFFF;
+  padding: 20px;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bolder;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.links::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #79A2CB;
+  transition: width 0.5s ease;
+  z-index: -1;
+
+}
+
+.links:hover::before {
+  width: 100%;
+>>>>>>> Stashed changes
 }
