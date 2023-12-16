@@ -5,5 +5,16 @@ h1 {
 
 .title
 {
-    margin: 60px;
+    /* margin: 60px; */
+    margin-top: 10%;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 620px)
+{
+    .title
+    {
+        margin-top: 20%;
+    }
 }

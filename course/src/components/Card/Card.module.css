@@ -1,23 +1,18 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* .main 
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap');
 
-=======
->>>>>>> parent of b08ec36 (updated css code)
 .main 
->>>>>>> b08ec36fd0a4ccae59e7d16f8d250334091933cb
 {
     width: 375px;
     height: 380px;
     background-color: #F0F0F0;
     border-radius: 15px;
-    margin: 20px;
+    /* margin: 20px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin: 10px 0px;
 }
 
 
@@ -33,69 +28,46 @@
 .heading 
 {
     font-size: 1.5rem;
+    text-align: left;
+    text-decoration: none;
+    margin: 10px 0px;
 }
 
 .headingDiv
 {
     text-align: left;
     width: 90%;
+ 
 
-} */
-.main {
-    width: 80vw;
-    max-width: 375px;
-    height: 380px;
-    background-color: #f0f0f0;
-    border-radius: 15px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+} 
 
-    @media screen and (max-width: 768px) {
-        margin: 10px;
-    }
+.para
+{
+    margin: 0;
+}
 
-    @media screen and (max-width: 480px) {
-        height: 300px;
-        margin: 5px;
+@media screen and (max-width: 770px)
+{
+    .main 
+    {
+        margin: 20px 0px;
     }
 }
 
-.imageDiv {
-    width: 100%;
-    max-width: 350px;
-    height: 200px;
-    border-radius: 15px;
-    margin-top: 20px;
-
-    @media screen and (max-width: 768px) {
-        height: 180px;
+@media screen and (max-width: 400px)
+{
+    .main 
+    {
+        width: 90%;
+        margin-left: 20px;
     }
 
-    @media screen and (max-width: 480px) {
-        height: 150px;
+    .imageDiv
+    {
+        width: 90%;
     }
 }
 
-.heading {
-    font-size: calc(1.5rem + 0.5vw);
 
-    /* @media screen and (max-width: 480px) {
-      font-size: 1.2rem;
-    } */
-}
 
-.headingDiv {
-    text-align: left;
-    width: 90%;
 
-    @media screen and (max-width: 768px) {
-        width: 100%;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 0.8rem;
-    }
-}

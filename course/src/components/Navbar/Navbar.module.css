@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap');
+
+
 .background {
     background-color: rgb(46, 95, 128);
-    height: 55px;
-    width: 100vw;
+    height: 65px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -26,23 +29,9 @@
     border-radius: 0px;
 }
 
-.links:hover {
-    background-color: #79A2CB;
-}
 
-.links:hover {
 
-    color: rgb(234, 234, 234);
-    text-decoration: underline;
 
-}
-
-.links:hover {
-
-    color: rgb(234, 234, 234);
-    text-decoration: underline;
-
-}
 
 .links::before {
     content: '';
@@ -54,9 +43,76 @@
     background-color: #79A2CB;
     transition: width 0.5s ease;
     z-index: -1;
+    text-decoration: none;
 
 }
 
 .links:hover::before {
     width: 100%;
+    text-decoration: none;
+}
+
+.menu 
+{
+    display: none;
+}
+
+.open 
+{
+    width: 90%;
+    height: 300px;
+    margin-top: 20%;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 2000;
+}
+
+
+.links1 
+{
+    font-weight: bolder;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(169, 166, 166);
+    width: 70%;
+    text-align: center;
+}
+
+.main 
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media screen and (max-width: 500px)
+{
+    .links{
+        display: none;
+    }
+
+    .menu 
+{
+    width: 60px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
 }

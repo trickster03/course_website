@@ -1,19 +1,28 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-  }
-  
+
     h1 {
     text-align: center;
-    margin: 2rem 0 4rem 0;
+
+  }
+
+  .title
+  {
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 4px;
   }
   
   .accordion {
-    max-width: 70%;
-    margin: 2rem auto;
+    margin: 20px 0px;
+    width: 80%;
     
+  }
+
+  .accordion_item
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .accordion_title {
@@ -22,6 +31,9 @@
     justify-content: space-between;
     cursor: pointer;
     background-color: #bdcccf;
+    font-weight: bolder;
+    font-size: 1rem;
+    width: 90%;
   }
   
   .accordion_title:hover {
@@ -31,76 +43,54 @@
   .accordion_title,
   .accordion-content {
     padding: 1rem;
+    border-radius: 15px;
   }
   
   .accordion_content {
-    background-color: #bdcccf;
-    padding: 15px;
+    background-color: #ebeff0;
+    /* padding: 15px; */
+    width: 80%;
+    padding: 3% 2%;
+    font-size: medium;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
-  
-  @media screen and (max-width: 700px) {
-    body {
-      font-size: 18px;
-    }
-  
-    .accordion {
-      width: 90%;
-    }
-  } */
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-h1 {
-  text-align: center;
-  margin: 4vh auto 8vh auto;
-  font-size: 24px;
-  max-width: 480px;
-}
-
-.accordion {
-  max-width: 80vw;
-  margin: 4vh auto;
-  padding: 2vh;
-  border-radius: 5vh;
-  background-color: #bdcccf;
-}
-
-@media only screen and (max-width: 768px) {
-  .accordion {
-    max-width: 90vw;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .accordion {
-    max-width: 95vw;
-  }
-}
-
-.accordion_title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2vh 3vw;
-  cursor: pointer;
-  background-color: #acc2c6;
-  color: #212529;
-  border-radius: 5vh 5vh 0 0;
+ .page 
+ {
   width: 100%;
-}
+ }
+ 
+  .main 
+  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 
-.accordion_title:hover {
-  background-color: #a0b5b8;
-}
+  @media screen and (max-width: 600px)
+  {
+    .accordion
+    {
+      width: 95%;
+    }
+  }
 
-.accordion-content {
-  padding: 3vh 4vw;
-  background-color: #f8f9fa;
-  border-radius: 0 0 5vh 5vh;
-  font-size: 18px;
-  width: 94%;
-}
+  @media screen and (max-width: 400px)
+  {
+    .accordion
+    {
+      width: 95%;
+    }
+
+    h1 
+    {
+      font-size: 2rem;
+    }
+  }
+
+  
+  
+ 
+

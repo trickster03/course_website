@@ -1,18 +1,30 @@
 import './App.css';
+import React from 'react';
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Footer from './components/Footer/Footer'
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes,useLocation } from "react-router-dom";
 import Physics from './pages/Physics/Physics'
 import Bio from './components/Bio/Biomedical'
 import Accordian from './components/accordian/AccordianDataNotes'
 import VideoAcc from './components/accordian/AccordianDataVideos'
 
-function App() {
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+const App=()=> {
   return (
     <div>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
@@ -77,7 +89,7 @@ function App() {
           }
         />
 
-      </Routes>
+      </Routes> 
       <Footer />
     </div>
   );

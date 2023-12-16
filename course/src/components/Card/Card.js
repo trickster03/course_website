@@ -11,7 +11,7 @@ function Card(props)
          </div>
          <div className={CardCss.headingDiv}>
          <h1 className={CardCss.heading}>{props.Heading}</h1>
-         <p>{props.description}</p>
+         <p className={CardCss.para}>{props.description}</p>
          </div>
       </div>
       </>

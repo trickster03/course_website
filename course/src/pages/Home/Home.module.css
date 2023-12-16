@@ -1,7 +1,7 @@
 .main {
     background-color: #4682A9;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     border-radius: 0;
@@ -11,12 +11,12 @@
 .textdiv {
     color: #FFFFFF;
     margin-left: 10%;
-    width: 500px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 3%;
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-decoration: none;
 
 }
@@ -24,6 +24,7 @@
 .heading {
     text-decoration: none;
     text-align: left;
+    font-size: 2.5rem;
 }
 
 .image {
@@ -101,8 +102,8 @@
     position: absolute;
     width: 350px;
     height: 350px;
-    top: 60px;
-    right: 250px;
+    top: 16%;
+    right: 70%;
 
 }
 
@@ -118,4 +119,39 @@
     margin-top: 250px;
     /* border: 10px solid; */
     border-radius: 15px;
+}
+
+@media screen and (max-width: 1250px)
+{
+    .absdiv
+    {
+        width: 250px;
+        height: 250px;
+    }
+
+    .normaldiv
+    {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .imagediv
+    {
+        display: none;
+    }
+
+    .textdiv
+    {
+        text-align: center;
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    .heading
+    {
+        text-align: center;
+    }
 }
