@@ -3,7 +3,7 @@
 
 .background {
     background-color: rgb(46, 95, 128);
-    height: 65px;
+    height: 80px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -36,29 +36,25 @@
 .links::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 0;
     width: 0;
-    height: 100%;
+    height: 2px;
     background-color: #79A2CB;
     transition: width 0.5s ease;
     z-index: -1;
-    text-decoration: none;
-
 }
 
 .links:hover::before {
     width: 100%;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
-.menu 
-{
+.menu {
     display: none;
 }
 
-.open 
-{
+.open {
     width: 90%;
     height: 300px;
     margin-top: 20%;
@@ -72,8 +68,7 @@
 }
 
 
-.links1 
-{
+.links1 {
     font-weight: bolder;
     color: black;
     padding: 20px;
@@ -88,8 +83,7 @@
     text-align: center;
 }
 
-.main 
-{
+.main {
     display: flex;
     justify-content: center;
 }
@@ -98,21 +92,19 @@
 
 
 
-@media screen and (max-width: 500px)
-{
-    .links{
+@media screen and (max-width: 500px) {
+    .links {
         display: none;
     }
 
-    .menu 
-{
-    width: 60px;
-    height: 45px;
-    border: 2px solid white;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
-}
+    .menu {
+        width: 60px;
+        height: 45px;
+        border: 2px solid white;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
 }

@@ -34,14 +34,16 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
-
+    font-size: larger;
 }
 
 .right {
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    font-size: larger;
     text-align: end;
+    margin-left: 15px;
 }
 
 .pgb {
@@ -80,6 +82,10 @@
         margin-top: 60px;
     }
 
+    .left {
+        margin-left: 15px;
+    }
+
     .right {
         text-align: left;
     }
@@ -94,8 +100,7 @@
         margin-top: 2px;
     }
 
-    .footContainer
-    {
+    .footContainer {
         flex-direction: column;
         align-items: flex-start;
         text-align: left;
