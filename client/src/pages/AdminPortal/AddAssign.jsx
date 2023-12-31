@@ -21,7 +21,7 @@ function AddAssignment()
 
 const fetchAssignment=async()=>{
   try{
-   const response = await axios.get(`http://localhost:3000/api/v1/assignments`)
+   const response = await axios.get(`https://course-website-backend1.onrender.com/api/v1/assignments`)
    console.log(response.data);
    setAssign(response.data.assignments)
   }
@@ -42,7 +42,7 @@ const handleInputChange=(e)=>{
     e.preventDefault()
     try{
       const token = localStorage.getItem('token');
-      const res =await axios.post("http://localhost:3000/api/v1/assignments", FormData,{
+      const res =await axios.post("https://course-website-backend1.onrender.com/api/v1/assignments", FormData,{
         headers:{ authorization:`Bearer ${token}`}
     });
 
@@ -61,7 +61,7 @@ const handleInputChange=(e)=>{
     let conf=window.confirm("Are you sure want to delete this Assignment?")
     if(conf){
         try{
-            await axios.delete(`http://localhost:3000/api/v1/assignments/${id}`,{
+            await axios.delete(`https://course-website-backend1.onrender.com/api/v1/assignments/${id}`,{
               headers:{ authorization:`Bearer ${localStorage.getItem('token')}`}
             });
             setAssign(assign.filter((x)=> x.id!==id))

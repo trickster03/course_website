@@ -71,7 +71,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/adminLogin', { email, password });
+      const response = await axios.post('https://course-website-backend1.onrender.com/api/v1/adminLogin', { email, password });
 
       if (response.status === 200) {
         // Assuming successful login returns a token or user information
@@ -83,7 +83,7 @@ const Login = () => {
         // Redirect to admin page or perform any necessary action upon successful login
         alert('Login successful!');
         //login to admin portal
-        window.location.replace("http://localhost:3001/admin");
+        window.location.replace("https://course-website-sigma.vercel.app/admin");
       } else {
         setError('Login failed. Please check your credentials.');
       }

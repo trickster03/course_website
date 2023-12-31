@@ -11,7 +11,7 @@ const AccordianDataNotes = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/v1/assignments?courseName=${props.course}`);
+        const response = await fetch(`https://course-website-backend1.onrender.com/api/v1/assignments?courseName=${props.course}`);
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }

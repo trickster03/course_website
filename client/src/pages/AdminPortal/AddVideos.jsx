@@ -17,7 +17,7 @@ function AddVideos() {
 
     const fetchVideos= async()=>{
         try{
-            const response = await axios.get(`http://localhost:3000/api/v1/videos`);
+            const response = await axios.get(`https://course-website-backend1.onrender.com/api/v1/videos`);
             // console.log(response.data);
             // const data= await response.json();
             setVideos(response.data.videos);
@@ -38,7 +38,7 @@ function AddVideos() {
         try{
             const token = localStorage.getItem('token');
             // console.log('Token:', token);
-            const res =await axios.post("http://localhost:3000/api/v1/videos", formData,{
+            const res =await axios.post("https://course-website-backend1.onrender.com/api/v1/videos", formData,{
               headers:{ authorization:`Bearer ${token}`}
             });
             // const data = await res.json();
@@ -55,7 +55,7 @@ function AddVideos() {
         let conf=window.confirm("Are you sure want to delete this Video?")
         if(conf){
             try{
-                await axios.delete(`http://localhost:3000/api/v1/videos/${id}`,{
+                await axios.delete(`https://course-website-backend1.onrender.com/api/v1/videos/${id}`,{
                   headers:{ authorization:`Bearer ${localStorage.getItem('token')}`}
                 });
                 setVideos(videos.filter((x)=> x.id!==id))

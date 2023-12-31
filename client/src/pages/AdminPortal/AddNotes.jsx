@@ -17,7 +17,7 @@ function AddNotes() {
 
     const fetchNotes= async()=>{
         try{
-            const response = await axios.get(`http://localhost:3000/api/v1/notes`);
+            const response = await axios.get(`https://course-website-backend1.onrender.com/api/v1/notes`);
             console.log(response.data);
             // const data= await response.json();
             setNotes(response.data.notes);
@@ -39,7 +39,7 @@ function AddNotes() {
             const token = localStorage.getItem('token');
             // console.log('Token:', token);
             console.log(formData);
-            const res =await axios.post("http://localhost:3000/api/v1/notes", formData,{
+            const res =await axios.post("https://course-website-backend1.onrender.com/api/v1/notes", formData,{
               headers:{ authorization:`Bearer ${token}`}
             });
             // const data = await res.json();
@@ -56,7 +56,7 @@ function AddNotes() {
         let conf=window.confirm("Are you sure want to delete this Notes?")
         if(conf){
             try{
-                await axios.delete(`http://localhost:3000/api/v1/notes/${id}`,{
+                await axios.delete(`https://course-website-backend1.onrender.com/api/v1/notes/${id}`,{
                   headers:{ authorization:`Bearer ${localStorage.getItem('token')}`}
                 });
                 setNotes(notes.filter((x)=> x.id!==id))
@@ -77,8 +77,16 @@ function AddNotes() {
       
     
       const getCourseName = (courseId) => {
-        return courseNamesMap[courseId] || 'Unknown Course';
+        console.log("Course ID:", courseId);
+        console.log("Course Names Map:", courseNamesMap);
+      
+        if (courseId && courseNamesMap && courseId in courseNamesMap) {
+          return courseNamesMap[courseId];
+        } else {
+          return 'Unknown Course';
+        }
       };
+      
 
     return(
         <>
@@ -131,7 +139,8 @@ function AddNotes() {
             {Array.isArray(notes) && notes.length > 0 ? (
               notes.map((note) => (
                 <tr key={note._id}>
-                  <td>{getCourseName(note.course)}</td>
+                  {/* <td>{getCourseName(note.course)}</td> */}
+                  {/* <td>{note.course}</td> */}
                   <td>{note.notesDescription}</td>
                   <td>
                     <button onClick={() => handleDeleteNotes(note._id)}>Delete</button>
